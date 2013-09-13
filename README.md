@@ -1,4 +1,4 @@
-MySite
-======
+wsd
+===
 
-Benjamin Thompson Site 
+wsd repo 
