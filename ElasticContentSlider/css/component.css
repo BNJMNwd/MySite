@@ -1,0 +1,220 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Needed for a fluid height: */
+html, body, .container, .main { height: 100%;}
+
+/* main wrapper */
+.cbp-contentslider {
+
+	width: 100%;
+	height: 31.438em;
+	position: relative;
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.cbp-contentslider > ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #fff;
+}
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3.313em;
+	z-index: 1000;
+	border: 1px solid #a5a4a4;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+
+/* footer of gallery*/
+.cbp-contentslider nav a {
+	float: left;
+	display: block;
+	width: 20%;
+	height: 100%;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+	color: #a5a4a4;
+	background: #fff;
+	outline: none;
+	text-align: center;
+	line-height: 3;
+	position: relative;
+	text-transform: uppercase;
+	border-right: 1px solid #a5a4a4;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a span {
+	display: block;
+}
+
+.cbp-contentslider nav a:last-child {
+	border: none;
+	box-shadow: 1px 0 #a5a4a4; /* fills gap caused by rounding */
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #a5a4a4;
+	color: #fff;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #a5a4a4;
+	color: #fff;
+}
+
+/* end of footer gallery*/
+
+
+
+.cbp-contentslider [class^="icon-"].rc-active:before, 
+.cbp-contentslider [class*=" icon-"].rc-active:before,
+.cbp-contentslider nav a:hover:before {
+	color: rgba(255,255,255,0.9);
+}
+
+
+.cbp-contentslider h3[class^="icon-"]:before, 
+.cbp-contentslider h3[class*=" icon-"]:before {
+	top: 0;
+	left: 0;
+	width: 2em;
+	line-height: 1;
+	height: 1.2em;
+	margin: 0;
+	color: #a5a4a4;
+}
+
+.cbp-contentslider li > div {
+	position: absolute;
+	/*top: 9em;*/
+	/*bottom: 3.313em;*/
+	width: 100%;
+	/*left: 0;*/
+	/*padding: 0 1em;*/
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.cbp-contentslider p {#333
+	color: #a5a4a4;
+	padding: 0 0.5em 0.4em;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 71em) {
+
+    .cbp-contentslider {
+        height: 29.005em;
+    }
+    .cbp-contentslider p {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 64em) {
+
+    .cbp-contentslider {
+        height: 26.3175em;
+    }
+}
+
+@media screen and (max-width: 60em) {
+
+    .cbp-contentslider {
+        height: 24.8175em;
+    }
+}
+
+@media screen and (max-width: 50em) {
+
+    .cbp-contentslider {
+        height: 20.9425em;
+    }
+}
+
+@media screen and (max-width: 48em) {
+
+    .cbp-contentslider {
+        height: 20.255em;
+    }
+}
+
+@media screen and (max-width: 45em) {
+
+    .cbp-contentslider {
+        height: 19.005em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+
+    .cbp-contentslider {
+        height: 17.0675em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+
+    .cbp-contentslider {
+        height: 13.1925em;
+    }
+}
+
+@media screen and (max-width: 26.625em) {
+
+    .cbp-contentslider {
+        height: 12.005em;
+    }
+}
+
+
+}
+
+
+
+
+
+

@@ -1,4 +1,0 @@
-MySite
-======
-
-Benjamin Thompson Site 
